@@ -25,3 +25,7 @@ INSERT INTO tb_resource (title, description, position, img_uri,type, external_li
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Vencimento da parcela.',TIMESTAMP WITH TIME ZONE '2020-08-18T20:50:07.12345Z',0,'http://localhost:8080/notifications/1',1);
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Notas lançadas.',TIMESTAMP WITH TIME ZONE '2020-08-19T20:50:07.12345Z',1,'http://localhost:8080/notifications/2',2);
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Avaliação das matérias do curso disponível.',TIMESTAMP WITH TIME ZONE '2020-11-22T20:50:07.12345Z',0,'http://localhost:8080/notifications/1',3);
+
+INSERT INTO tb_section (title, description, position, img_uri, resource_id,prerequisite_id) VALUES ('Capítulo 1', 'Neste capítulo vamos começar', 1, 'https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6', 1, null);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id,prerequisite_id) VALUES ('Capítulo 2', 'Neste capítulo vamos continuar', 2, 'https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6', 1, 1);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id,prerequisite_id) VALUES ('Capítulo 2', 'Neste capítulo vamos finalizar', 3, 'https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6', 1, 2);
