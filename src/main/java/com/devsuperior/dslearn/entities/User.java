@@ -1,5 +1,6 @@
 package com.devsuperior.dslearn.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -32,7 +33,7 @@ public class User {
 	private Set<Role> roles = new HashSet<>();
 
 	@OneToMany(mappedBy = "user")
-	private List<Notification> notifications;
+	private List<Notification> notifications = new ArrayList<>();
 
 	public User() {
 	}
